@@ -1,0 +1,10 @@
+[Unit]
+Description=Bluetooth auto connect service
+Before=bluetooth.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/bluetooth-auto-connect
+
+[Install]
+WantedBy=bluetooth.service
